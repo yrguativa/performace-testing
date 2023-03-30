@@ -1,4 +1,4 @@
-Performace Test
+Performance Test
 ===============
 
 This repository have content of course [Curso de performace Testing en Node.js con K6](https://platzi.com/cursos/performance-testing-nodejs/)
@@ -24,3 +24,8 @@ docker run --rm -i grafana/k6 run --vus 10 --duration 30s - < first-test.js
 * [Load](./load.js) The load test is a test that we have a high average number of users and spontaneous users increase.
 * [Soak](./soak.js) The soke test is a test that we have a low number of users but for a long time.
 
+## Custom Metrics
+* [Counter Metric](./counter.js) Custom metric with accumulate value
+* [Gauge Metric](./gauge.js) Save minimum, maximum and last values
+* [Rate Metric](./rate.js) Save percentage when not is zero.   
+* [Trend Metric](./trend.js) Result statistics values.
