@@ -17,7 +17,9 @@ docker run --rm -i grafana/k6 run --vus 10 --duration 30s - < test.js
 ## Content
 
 * [First Test ](./first-test.js) 
-
-
+* [Stages](./stages.js) This test using VUs and stages, run test with 10 user in 10s.
+* [Smoke](/smoke.js) The smoke test is test with few users.
+* [Stress] (./stress.js) The stress test is test with maximum amount of users and requests.
+* [Spike](./spike.js) The spike test is a test that increases the number of users in a short time..
 
 
