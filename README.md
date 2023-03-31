@@ -51,6 +51,10 @@ docker run -d --name=grafana -p 3001:3000 --network=k6-dashboard grafana/grafana
 ```console
 k6 run --out influxdb=http://localhost:8086/k6dbtest stress.js
 ```
+Temp: send data from container k6
+```console
+docker run --rm -i --network=k6-dashboard grafana/k6 run --out influxdb=http://influxdb:8086/k6dbtest - < stress.js
+```
 3. Add data source (influxdb) in grafana
 
 > using url with name container influxdb: http://influxdb:8086 and database k6dbtest
