@@ -29,3 +29,7 @@ docker run --rm -i grafana/k6 run --vus 10 --duration 30s - < first-test.js
 * [Gauge Metric](./gauge.js) Save minimum, maximum and last values
 * [Rate Metric](./rate.js) Save percentage when not is zero.   
 * [Trend Metric](./trend.js) Result statistics values.
+
+## Checks and Thresholds
+* [Check](./check.js) Checks is validations in us test. Not break the test.
+* [Threshold](./threshold.js) Checks is validations in us test. that break the test.
