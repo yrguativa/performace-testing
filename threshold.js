@@ -9,7 +9,7 @@ export const options = {
         http_req_failed: ["rate<0.35"],
 
         /**
-         *  Cuando pasado 10s se cumple la condición ( el percentil 95 > 200 ms) se aborta el test
+         *  Cuando pasado 10s se cumple la condición ( el percentil 95 > 200 ms ) se aborta el test
          *  de lo contrario se continua
          */
         http_req_duration: [
